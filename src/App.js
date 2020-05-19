@@ -2,19 +2,24 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 
+//What I would fix with more time: 1) better styling 2) remove inline styling 3) make the inputs and events display their own custom component 4) add additional options/functionality
+
 function App() {
 
+  //Component State
   const [events, setEvents] = useState([])
   const [owner, setOwner] = useState('')
   const [repo, setRepo] = useState('')
   const [eventType, setEventType] = useState('')
 
+  //Fetch and Filter Events
   const handleClick = () => {
     axios.get(`https://api.github.com/repos/${owner}/${repo}/events`)
       .then(res => res.data.filter(event => event.type === eventType))
       .then(filteredRes => setEvents(filteredRes))
   }
 
+  //Render Inputs and List of Events
   return (
     <div className="App" style={{ marginTop: 40, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div>
