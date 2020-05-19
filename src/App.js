@@ -9,28 +9,11 @@ function App() {
   const [repo, setRepo] = useState('')
   const [eventType, setEventType] = useState('')
 
-  useEffect(() => {
-    displayEvents()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [events])
-
   const handleClick = () => {
     axios.get(`https://api.github.com/repos/${owner}/${repo}/events`)
       .then(res => res.data.filter(event => event.type === eventType))
       .then(filteredRes => setEvents(filteredRes))
   }
-
-  const displayEvents = (() => {
-    events.map((event, i) => {
-      console.log(event)
-      return (
-        <div>
-          hello
-        </div>
-      )
-    })
-  })
-
 
   return (
     <div className="App" style={{ marginTop: 40, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
