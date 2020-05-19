@@ -18,10 +18,10 @@ function App() {
   return (
     <div className="App" style={{ marginTop: 40, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div>
-        <span>Owner</span><input onChange={e => setOwner(e.target.value)} style={{ marginRight: 20 }} />
-        <span>Repo</span><input onChange={e => setRepo(e.target.value)} style={{ marginRight: 20 }} />
+        <span>Owner</span><input id="owner" onChange={e => setOwner(e.target.value)} style={{ marginRight: 20 }} />
+        <span>Repo</span><input id="repo" onChange={e => setRepo(e.target.value)} style={{ marginRight: 20 }} />
         <span>Event Type</span>
-        <select onChange={e => setEventType(e.target.value)}>
+        <select id="eventType" onChange={e => setEventType(e.target.value)}>
           <option>CommitCommentEvent</option>
           <option>CreateEvent</option>
           <option>DeleteEvent</option>
@@ -38,10 +38,10 @@ function App() {
           <option>SponsorshipEvent</option>
           <option>WatchEvent</option>
         </select>
-        <button onClick={handleClick}>Search</button>
+        <button id="button" onClick={handleClick}>Search</button>
       </div>
 
-      <div style={{ marginTop: 20 }}>
+      <div id="events" style={{ marginTop: 20 }}>
         { events.map((event, i) => {
           return (
             <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>

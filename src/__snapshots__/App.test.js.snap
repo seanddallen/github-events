@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match initial layout snapshot 1`] = `
+Array [
+  <div
+    className="App"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "marginTop": 40,
+      }
+    }
+  >
+    <div>
+      <span>
+        Owner
+      </span>
+      <input
+        onChange={[Function]}
+        style={
+          Object {
+            "marginRight": 20,
+          }
+        }
+      />
+      <span>
+        Repo
+      </span>
+      <input
+        onChange={[Function]}
+        style={
+          Object {
+            "marginRight": 20,
+          }
+        }
+      />
+      <span>
+        Event Type
+      </span>
+      <select
+        onChange={[Function]}
+      >
+        <option>
+          CommitCommentEvent
+        </option>
+        <option>
+          CreateEvent
+        </option>
+        <option>
+          DeleteEvent
+        </option>
+        <option>
+          ForkEvent
+        </option>
+        <option>
+          GollumEvent
+        </option>
+        <option>
+          IssueCommentEvent
+        </option>
+        <option>
+          IssuesEvent
+        </option>
+        <option>
+          MemberEvent
+        </option>
+        <option>
+          PublicEvent
+        </option>
+        <option>
+          PullRequestEvent
+        </option>
+        <option>
+          PullRequestReviewCommentEvent
+        </option>
+        <option>
+          PushEvent
+        </option>
+        <option>
+          ReleaseEvent
+        </option>
+        <option>
+          SponsorshipEvent
+        </option>
+        <option>
+          WatchEvent
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+        Search
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+    />
+  </div>,
+]
+`;
+
+exports[`should render initial layout 1`] = `
+Array [
+  <div
+    className="App"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "marginTop": 40,
+      }
+    }
+  >
+    <div>
+      <span>
+        Owner
+      </span>
+      <input
+        onChange={[Function]}
+        style={
+          Object {
+            "marginRight": 20,
+          }
+        }
+      />
+      <span>
+        Repo
+      </span>
+      <input
+        onChange={[Function]}
+        style={
+          Object {
+            "marginRight": 20,
+          }
+        }
+      />
+      <span>
+        Event Type
+      </span>
+      <select
+        onChange={[Function]}
+      >
+        <option>
+          CommitCommentEvent
+        </option>
+        <option>
+          CreateEvent
+        </option>
+        <option>
+          DeleteEvent
+        </option>
+        <option>
+          ForkEvent
+        </option>
+        <option>
+          GollumEvent
+        </option>
+        <option>
+          IssueCommentEvent
+        </option>
+        <option>
+          IssuesEvent
+        </option>
+        <option>
+          MemberEvent
+        </option>
+        <option>
+          PublicEvent
+        </option>
+        <option>
+          PullRequestEvent
+        </option>
+        <option>
+          PullRequestReviewCommentEvent
+        </option>
+        <option>
+          PushEvent
+        </option>
+        <option>
+          ReleaseEvent
+        </option>
+        <option>
+          SponsorshipEvent
+        </option>
+        <option>
+          WatchEvent
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+        Search
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+    />
+  </div>,
+]
+`;
