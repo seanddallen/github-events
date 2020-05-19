@@ -4,7 +4,7 @@ GITHUB-EVENTS APPLICATION
 
 ### Clone Repo
 
-Type "git clone https://github.com/seantayler/github-events.git" into the command line in desired directory
+Type "git clone https://github.com/seantayler/github-events.git" into the command line in desired directory<br />
 Open project in code editor
 
 ### `npm start`
@@ -20,6 +20,6 @@ Launches Jest as a test runner in watch mode <br />
 
 <b>Process:</b><br />
 
-1. Type in the owner name and repo name into the inputs (case sensitive and no spaces)
-2. Select a Github event type from the dropdown
+1. Type in the owner name and repo name into the inputs (case sensitive and no spaces)<br />
+2. Select a Github event type from the dropdown<br />
 3. All events that match that user/repo/type will be displayed
